@@ -1,11 +1,29 @@
 {
   "name": "es6hello",
   "version": "1.0.0",
-  "description": "neko",
+  "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Tom Misawa <tomiyamag@gmail.com> (https://github.com/tomstyle)",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomstyle/es6hello.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tomstyle/es6hello/issues"
+  },
+  "homepage": "https://github.com/tomstyle/es6hello#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  }
 }
